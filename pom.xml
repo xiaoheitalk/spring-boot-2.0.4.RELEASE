@@ -12,6 +12,7 @@
 	<properties>
 		<revision>2.0.4.RELEASE</revision>
 		<main.basedir>${basedir}</main.basedir>
+		<disable.checks>false</disable.checks>
 	</properties>
 	<!-- Most elements are in profiles so they are stripped out during maven-flatten -->
 	<profiles>
@@ -195,32 +196,32 @@
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
 					<version>1.0.0</version>
-					<configuration>
-						<lifecycleMappingMetadata>
-							<pluginExecutions>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>
-											org.jetbrains.kotlin
-										</groupId>
-										<artifactId>
-											kotlin-maven-plugin
-										</artifactId>
-										<versionRange>
-											[1.1.51,)
-										</versionRange>
-										<goals>
-											<goal>compile</goal>
-											<goal>test-compile</goal>
-										</goals>
-									</pluginExecutionFilter>
-									<action>
-										<ignore></ignore>
-									</action>
-								</pluginExecution>
-							</pluginExecutions>
-						</lifecycleMappingMetadata>
-					</configuration>
+<!--					<configuration>-->
+<!--						<lifecycleMappingMetadata>-->
+<!--							<pluginExecutions>-->
+<!--								<pluginExecution>-->
+<!--									<pluginExecutionFilter>-->
+<!--										<groupId>-->
+<!--											org.jetbrains.kotlin-->
+<!--										</groupId>-->
+<!--										<artifactId>-->
+<!--											kotlin-maven-plugin-->
+<!--										</artifactId>-->
+<!--										<versionRange>-->
+<!--											[1.1.51,)-->
+<!--										</versionRange>-->
+<!--										<goals>-->
+<!--											<goal>compile</goal>-->
+<!--											<goal>test-compile</goal>-->
+<!--										</goals>-->
+<!--									</pluginExecutionFilter>-->
+<!--									<action>-->
+<!--										<ignore></ignore>-->
+<!--									</action>-->
+<!--								</pluginExecution>-->
+<!--							</pluginExecutions>-->
+<!--						</lifecycleMappingMetadata>-->
+<!--					</configuration>-->
 				</plugin>
 			</plugins>
 		</pluginManagement>
